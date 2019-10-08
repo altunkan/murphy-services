@@ -1,4 +1,4 @@
-package com.anilaltunkan.murphy.security.exception;
+package com.anilaltunkan.murphy.err.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -1,7 +1,7 @@
 package com.anilaltunkan.murphy.security.conf;
 
 import com.anilaltunkan.murphy.AppProperties;
-import com.anilaltunkan.murphy.security.exception.BadRequestException;
+import com.anilaltunkan.murphy.err.exception.BadRequestException;
 import com.anilaltunkan.murphy.security.repository.HttpCookieOAuth2AuthorizationRequestRepository;
 import com.anilaltunkan.murphy.security.service.TokenProvider;
 import com.anilaltunkan.murphy.security.util.CookieUtil;

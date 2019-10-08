@@ -1,7 +1,7 @@
 package com.anilaltunkan.murphy.security.service;
 
 import com.anilaltunkan.murphy.security.dto.SignUpRequest;
-import com.anilaltunkan.murphy.security.exception.BadRequestException;
+import com.anilaltunkan.murphy.err.exception.BadRequestException;
 import com.anilaltunkan.murphy.security.model.AuthProvider;
 import com.anilaltunkan.murphy.security.model.Authority;
 import com.anilaltunkan.murphy.security.model.AuthorityName;

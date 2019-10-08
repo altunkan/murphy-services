@@ -1,6 +1,6 @@
 package com.anilaltunkan.murphy.security.dto;
 
-import com.anilaltunkan.murphy.security.exception.OAuth2AuthenticationProcessingException;
+import com.anilaltunkan.murphy.err.exception.OAuth2AuthenticationProcessingException;
 import com.anilaltunkan.murphy.security.model.AuthProvider;
 
 import java.util.Map;

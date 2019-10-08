@@ -1,7 +1,7 @@
 package com.anilaltunkan.murphy.security.service;
 
 import com.anilaltunkan.murphy.security.dto.Profile;
-import com.anilaltunkan.murphy.security.exception.ResourceNotFoundException;
+import com.anilaltunkan.murphy.err.exception.ResourceNotFoundException;
 import com.anilaltunkan.murphy.security.model.User;
 import com.anilaltunkan.murphy.security.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

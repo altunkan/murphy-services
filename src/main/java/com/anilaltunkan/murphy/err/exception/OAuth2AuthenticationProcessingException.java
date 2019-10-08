@@ -1,4 +1,4 @@
-package com.anilaltunkan.murphy.security.exception;
+package com.anilaltunkan.murphy.err.exception;
 
 import org.springframework.security.core.AuthenticationException;
 

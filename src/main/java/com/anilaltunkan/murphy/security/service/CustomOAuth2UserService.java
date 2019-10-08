@@ -3,7 +3,7 @@ package com.anilaltunkan.murphy.security.service;
 import com.anilaltunkan.murphy.security.dto.OAuth2UserInfo;
 import com.anilaltunkan.murphy.security.dto.OAuth2UserInfoFactory;
 import com.anilaltunkan.murphy.security.dto.UserPrincipal;
-import com.anilaltunkan.murphy.security.exception.OAuth2AuthenticationProcessingException;
+import com.anilaltunkan.murphy.err.exception.OAuth2AuthenticationProcessingException;
 import com.anilaltunkan.murphy.security.model.AuthProvider;
 import com.anilaltunkan.murphy.security.model.User;
 import com.anilaltunkan.murphy.security.repository.UserRepository;

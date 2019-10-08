@@ -1,6 +1,6 @@
 package com.anilaltunkan.murphy.err;
 
-import com.anilaltunkan.murphy.security.exception.BadRequestException;
+import com.anilaltunkan.murphy.err.exception.BadRequestException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.ConversionNotSupportedException;
@@ -195,7 +195,7 @@ public class MurphyExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(BadCredentialsException.class)
     protected ResponseEntity<Object> handleBadCredentials(BadCredentialsException ex, WebRequest request) {
         _logger.error("BadCredentialsException", ex);
-        return buildResponseEntity(new ApiError(UNAUTHORIZED, ex.getLocalizedMessage(), ex));
+        return buildResponseEntity(new ApiError(UNAUTHORIZED, "Invalid username or password", ex));
     }
 
     @ExceptionHandler(BadRequestException.class)
