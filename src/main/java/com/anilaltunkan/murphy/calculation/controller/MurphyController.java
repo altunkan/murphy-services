@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 /**
  * @Author: MEHMET ANIL ALTUNKAN
@@ -30,6 +31,8 @@ public class MurphyController {
 
     @PostMapping(value = "/calculate", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<CalculationResponse> calculate(@RequestBody CalculationRequest calculationRequest, Device device) {
-        return ResponseEntity.ok(murphyService.calculateMurphy(calculationRequest));
+        CalculationResponse calculationResponse = murphyService.calculateMurphy(calculationRequest);
+        String returnPath = "/id/" + calculationResponse.getCalculationId();
+        return ResponseEntity.created(ServletUriComponentsBuilder.fromCurrentContextPath().path(returnPath).build().toUri()).body(calculationResponse);
     }
 }

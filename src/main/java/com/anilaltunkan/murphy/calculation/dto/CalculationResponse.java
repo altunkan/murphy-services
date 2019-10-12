@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
  **/
 @Data @AllArgsConstructor
 public class CalculationResponse {
+    private Long calculationId;
     private String event;
     private BigDecimal murphy;
     private LocalDateTime eventTime;

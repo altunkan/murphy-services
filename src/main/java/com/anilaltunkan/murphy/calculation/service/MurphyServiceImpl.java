@@ -68,6 +68,6 @@ public class MurphyServiceImpl implements MurphyService {
         calculation.setStatus(CalculationStatus.NEW);
         calculation.setMurphy(murphy);
         calculation = calculationRepository.save(calculation);
-        return new CalculationResponse(calculation.getEvent(), calculation.getMurphy(), calculation.getEventTime());
+        return new CalculationResponse(calculation.getCalculationId(), calculation.getEvent(), calculation.getMurphy(), calculation.getEventTime());
     }
 }
