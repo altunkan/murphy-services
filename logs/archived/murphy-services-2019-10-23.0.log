@@ -1,0 +1,3 @@
+2019-10-23 06:40:53,450 INFO com.anilaltunkan.murphy.calculation.service.MurphyServiceImpl [http-nio-8080-exec-10] First 8.550
+2019-10-23 06:40:53,452 INFO com.anilaltunkan.murphy.calculation.service.MurphyServiceImpl [http-nio-8080-exec-10] Second 0.7
+2019-10-23 06:40:53,453 INFO com.anilaltunkan.murphy.calculation.service.MurphyServiceImpl [http-nio-8080-exec-10] Third 1.111
