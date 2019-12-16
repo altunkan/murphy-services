@@ -6,7 +6,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/murphy
     username: murphy
-    password: a8n7e9l5!
+    password: xxxxxxxxxxxxxxxxx
   jpa:
     show-sql: true
     hibernate:
@@ -25,21 +25,17 @@ spring:
       client:
         registration:
           google:
-            clientId: 192216634132-anqih1rhi1r5pul2qbt8dk1qs0q8mdin.apps.googleusercontent.com
-            clientSecret: RH7kNFJc57t8lPeB1crFnZ32
+            clientId: xxxxxxxxxxxxxxxxx
+            clientSecret: xxxxxxxxxxxxxxxxx
             redirectUriTemplate: "{baseUrl}/oauth2/callback/{registrationId}"
             scope:
               - email
               - profile
 app:
   auth:
-    tokenSecret: KZh"PGMwC)j68t:K
+    tokenSecret:xxxxxxxxxxxxxxxxx
     tokenExpirationMsec: 864000000
   oauth2:
-    # After successfully authenticating with the OAuth2 Provider,
-    # we'll be generating an auth token for the user and sending the token to the
-    # redirectUri mentioned by the frontend client in the /oauth2/authorize request.
-    # We're not using cookies because they won't work well in mobile clients.
     authorizedRedirectUris:
       - http://localhost:8080/murphy/user/me
       - myandroidapp://oauth2/redirect
